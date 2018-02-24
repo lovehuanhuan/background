@@ -1,0 +1,108 @@
+\documentclass[12pt]{aghdpl}
+% \documentclass[en,11pt]{aghdpl}  % praca w języku angielskim
+\usepackage[polish]{babel}
+%\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+
+% dodatkowe pakiety
+\usepackage[authoryear]{natbib}
+\usepackage{enumerate}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{algorithm2e}
+\usepackage{fixltx2e}
+\usepackage{subcaption}
+\usepackage[section]{placeins}
+\lstloadlanguages{TeX}
+
+\lstset{
+  literate={ą}{{\k{a}}}1
+           {ć}{{\'c}}1
+           {ę}{{\k{e}}}1
+           {ó}{{\'o}}1
+           {ń}{{\'n}}1
+           {ł}{{\l{}}}1
+           {ś}{{\'s}}1
+           {ź}{{\'z}}1
+           {ż}{{\.z}}1
+           {Ą}{{\k{A}}}1
+           {Ć}{{\'C}}1
+           {Ę}{{\k{E}}}1
+           {Ó}{{\'O}}1
+           {Ń}{{\'N}}1
+           {Ł}{{\L{}}}1
+           {Ś}{{\'S}}1
+           {Ź}{{\'Z}}1
+           {Ż}{{\.Z}}1
+}
+
+%---------------------------------------------------------------------------
+
+\author{Agata Paciorek}
+\shortauthor{A. Paciorek}
+
+\titlePL{Segmentacja obiektów pierwszoplanowych w warunkach obecności drobnego ruchu na scenie}
+\titleEN{Foreground object segmentation in presence of background clutter}
+
+\shorttitlePL{Segmentacja obiektów pierwszoplanowych...} % skrócona wersja tytułu jeśli jest bardzo długi
+\shorttitleEN{Segmentation}
+
+\thesistype{Praca dyplomowa inżynierska}
+%\thesistype{Master of Science Thesis}
+
+\supervisor{dr inż. Tomasz Kryjak}
+%\supervisor{dr inż. Tomasz Kryjak}
+
+\degreeprogramme{Informatyka}
+%\degreeprogramme{Computer Science}
+
+\date{2015}
+
+\department{Katedra Automatyki i Inżynierii Biomedycznej}
+%\department{Department of Automatics and Biomedical Engineering}
+
+\faculty{Wydział Elektrotechniki, Automatyki,\protect\\[-1mm] Informatyki i Inżynierii Biomedycznej}
+%\faculty{Faculty of Electrical Engineering, Automatics, Computer Science and Biomedical Engineering}
+
+\acknowledgements{\large Serdecznie dziękuję doktorowi Tomaszowi Kryjakowi za nadzór nad procesem tworzenia pracy \\
+oraz \\
+Michałowi Drobniakowi - za pomoc.
+}
+
+
+\setlength{\cftsecnumwidth}{10mm}
+
+%---------------------------------------------------------------------------
+
+\begin{document}
+
+\titlepages
+
+\tableofcontents
+\clearpage
+
+\include{rozdzial1}
+\include{rozdzial2}
+\include{rozdzial2_2}
+\include{rozdzial3}
+\include{rozdzial4}
+\include{rozdzial5}
+
+
+
+% itd.
+ \appendix
+% \include{dodatekA}
+% \include{dodatekB}
+% itd.
+
+%\bibliographystyle{authordate1}
+\bibliography{bibliografia}
+\listoffigures
+\listoftables
+% \listofalgorithms
+
+%\include{z_szablonu}
+\end{document}

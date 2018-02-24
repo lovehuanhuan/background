@@ -1,0 +1,30 @@
+\chapter{Wstęp}
+\label{cha:wstęp}
+
+\paragraph{}
+Ilość generowanej przez człowieka informacji w ostatnich latach gwałtownie wzrasta. Dynamiczny rozwój  Internetu i szeroko pojętej technologii  oraz wzrost jej dostępności na niemal całym świecie spowodował, iż o wiele prościej jest zarówno pozyskiwać wiedzę, jak i dzielić się nią. W przeciągu ostatnich czterdziestu lat, od czasu pojawienia się sieci komputerowej, poszerzyły się także możliwości przechowywania danych. Miniaturyzacja urządzeń wraz ze wzrostem jakości pozyskiwanych informacji sprzyjają coraz dalszemu rozwojowi technologii informacyjnej. Dlatego też tak ważna jest automatyzacja procesów analizy informacji, bez której pozyskiwanie istotnych faktów byłoby bardzo utrudnione, jeżeli nie niemożliwe. 
+\paragraph{}
+Jedną z dziedzin, która doświadcza ciągłego rozwoju, jest monitoring wizyjny. W większych miastach na kamery monitorujące można natknąć się nieomal na każdym kroku - począwszy od budynków, takich jak biurowce, strzeżone osiedla czy szkoły, po zintegrowane systemy monitoringu całego miasta. Można się spotkać nawet z monitoringiem podwodnym. Coraz wyższa jakość pozyskiwanego z kamer obrazu oraz wzrastająca liczba montowanych urządzeń powoduje, iż objętość danych uzyskiwanych w ten sposób nie przestaje się powiększać. Dlatego też monitoring oparty na analizie bieżącego materiału wideo przez człowieka staje się w dużej mierze niewystarczający.
+\paragraph{}
+Ograniczenia percepcji ludzkiego ciała powodują, iż w wielu przypadkach maszyny zaczynają przewyższać możliwości ludzi. Ciągłe skupianie uwagi na analizie obserwowanej przez operatora sceny może prowadzić do znużenia i wolniejszej detekcji ewentualnego zagrożenia. Nie bez znaczenia jest również fakt, iż na nagraniach bardzo rzadko występują sytuacje wymagające interwencji - czego konsekwencją jest spadek uwagi obserwatora w miarę upływu czasu. Rzadko również zdarza się, że pracownik ma do czynienia z obrazem tylko z jednej kamery - najczęściej jest to kilka nagrań, wyświetlanych na osobnych urządzeniach, bądź na jednym monitorze z możliwością przełączania się między scenami. W obu przypadkach operator systemu boryka się z ograniczeniami dotyczącymi równoczesnej analizy wielu scen. Czynniki te, u człowieka powodujące zmniejszoną zdolność percepcji, maszyn nie dotyczą. Dobrze zaprojektowany system detekcji może zatem pomóc w uzyskaniu z obrazów istotnej informacji.
+\paragraph{}
+Abstrahując od hipotetycznej możliwości całkowitego zastąpienia człowieka maszyną w\,kwestii obserwacji i analizy obrazów, już samo wykrycie przez odpowiedni system zmian na scenie i zasygnalizowanie ich operatorowi znacznie zwiększa prawdopodobieństwo wykrycia nieprawidłowości. Możliwości obliczeniowe obecnych systemów, ze szczególnym uwzględnieniem czasu wykonywania operacji są powodem, dla którego empiryczne postrzeganie świata przez człowieka da się zastąpić właśnie odpowiednim sztucznym systemem wizyjnym. Twórcy oprogramowania takich systemów borykają się jednak z wieloma problemami. Jednym z nich jest prawidłowa segmentacja obiektów pierwszoplanowych, o której będzie mowa w tej pracy. Polega ona na wyodrębnieniu elementów sceny niosących istotną informację i nie należących do tła, jak choćby pieszych, samochodów czy innych pojazdów. Tak uzyskane wyniki mogą być dowolnie przetwarzane, co umożliwia na przykład badanie zachowania ludzi w celu wykrycia niebezpiecznych sytuacji czy informowanie o obiektach pozostawionych na scenie, potencjalnie również stwarzających zagrożenie - na przykład plecak porzucony na dworcu kolejowym może zawierać ładunek wybuchowy. Segmentacja ta nie jest jednak zagadnieniem prostym - przeważnie system ma do czynienia z nagraniami, na których ''sterylne'' warunki (niezmienne warunki oświetleniowe/pogodowe, statyczne tło) występują bardzo rzadko. Jednym z wyzwań jest kwestia wyeliminowania detekcji drobnego ruchu sceny, nieistotnego z punktu niesionej przez niego informacji - takiego jak nieznaczne drgania liści na wietrze, czy zmienne refleksy świetlne w wodzie płynącej w fontannie bądź innych zbiornikach wodnych. Bardzo rzadko zdarza się, iż na monitorowanej na zewnątrz budynku scenie nie występuje żadne z tych zjawisk, dlatego tak ważne jest rozwiązanie problemu. Standardowe podejścia w\,segmentacji obiektów nie umożliwiają odseparowania takich drobnych poruszeń od większych zmian na nagraniu, co skutkuje zwykle liczbą tzw. fałszywych detekcji, które mogę utrudnić analizę obrazu.
+
+%---------------------------------------------------------------------------
+
+\section{Cele pracy}
+\label{sec:celePracy}
+
+Celem niniejszej pracy była implementacja i ewaluacja kilku opisanych metod dotyczących tematyki segmentacji obiektów pierwszoplanowych w zmiennych warunkach na scenie (uwzględniających także występowanie drobnego ruchu tła). Na podstawie otrzymanych wyników podjęta została próba sklasyfikowania testowanych rozwiązań pod względem jakościowym i wydajnościowym.
+
+
+%---------------------------------------------------------------------------
+
+\section{Zawartość pracy}
+\label{sec:zawartoscPracy}
+
+W rozdziale \ref{cha:tematykaPracy} opisane zostały podstawowe pojęcia towarzyszące procesowi segmentacji obiektów pierwszoplanowych. Dalsza cześć dokumentu przedstawia niektóre z metod dotyczących tego zagadnienia i podzielona jest na dwie części - pierwszą, opisującą klasyczne algorytmy oraz drugą, omawiającą najnowsze rozwiązania. Końcowe rozdziały zawierają wyniki testów zaimplementowanych na potrzeby tej pracy sposobów segmentacji oraz wnioski płynące z analizy rezultatów.
+
+
+
+
